@@ -12,4 +12,4 @@ Route::get('/user', function (Request $request) {
 
 // Create Route API
 
-Route::apiResource('/categories', [CategoryController::class, 'index']);
+Route::apiResource('/categories', CategoryController::class)->names('api.categories');
