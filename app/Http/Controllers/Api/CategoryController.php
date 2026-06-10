@@ -21,6 +21,7 @@ class CategoryController extends Controller
             'success' => true,
             'data' => $categories
         ]);
+        // dd('$categories = Category::all();');
     }
 
     /**
