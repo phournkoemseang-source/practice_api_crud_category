@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,3 +15,4 @@ Route::get('/user', function (Request $request) {
 // Create Route API
 
 Route::apiResource('/categories', CategoryController::class)->names('api.categories');
+Route::apiResource('/products', ProductController::class)->names('api.products');
